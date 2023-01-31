@@ -388,7 +388,6 @@ a, a:visited, a:active{
     padding-top: 16px;
     margin: 0px 15px;
     margin-bottom:20px;
-    box-sizing: ;
     border: 0.1px solid rgb(177, 177, 177);
     border-radius: 16px;
     background-image: linear-gradient(to left, rgb(255, 206, 253), #dff1ff);
