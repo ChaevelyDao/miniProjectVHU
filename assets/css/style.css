@@ -11,11 +11,17 @@
     clear: both;
 }
 
+html{
+    font-family: Arial, sans-serif,"Segoe UI";
+}
+
 body{
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
 }
 :root{
-    --grey:#e7e7e9;
+    /* --grey:#e7e7e9; */
+    --grey:#e3e6f3;
+    --sub-title:#bcbec5; 
     --input-color:rgb(19, 18, 18);
     --sred:rgba(244, 67, 54, 1);
     --b: 0.1em;   /* the thickness of the line */
@@ -35,15 +41,20 @@ a, a:visited, a:active{
 }
 
 #header{
-    display: flex;
-    justify-content: space-between;
-}
-#header-container{
     padding: 20px 40px;
     height: 100px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     background-color: var(--grey);
+    position: sticky;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#header-container{
+
 }
 
 .logo{
@@ -148,10 +159,10 @@ a, a:visited, a:active{
     display: none;
     /* height: 0px; */
     position: absolute;
-    background-color: #e7e7e9;
-    min-width: 160px;
+    min-width: 169px;
     top: 100%;
     left: 0;
+    color: #000;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     z-index: 5;
@@ -187,11 +198,13 @@ a, a:visited, a:active{
     display: none;
     position: absolute;
     padding: 10px 12px;
+    margin-top: 1.6px;
     margin-left: -80px;
     min-width: 276px;
+    color: #000;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 5;
+    z-index: 4;
     font-size: 16px;
 }
 
@@ -249,20 +262,14 @@ a, a:visited, a:active{
             background-clip: text,padding-box;
     transition: .3s var(--_s,0s) linear, background-size .3s calc(.3s - var(--_s,0s));
 }
-.navhover:hover {
+.navhover:hover{
     --_p: 100%;
     --_s: .3s;
 }
-
-/* #slider img{
-    width: 80vw;
+#slider,
+#content{
+    background-color: #fff;
 }
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
 
 .slideshow-container {
     max-width: 70vw;
@@ -351,24 +358,34 @@ a, a:visited, a:active{
 #content .content-repeat{
     display: block;
     padding: 0px 75px;
-    min-height: 910px;
+    min-height: 885px;
     /* margin: 0px 0px; */
 }
 
 .content-title{
     display: flex;
     font-size: 37px;
-    margin: 50px 0px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 70px 0px 20px 0px;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+}
+
+#sub-title{
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--sub-title);
+    margin-bottom: 60px;
 }
 
 .product-list{
     float: left;
     width: 20%;
     padding: 0px 30px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 
     /* display: flex;
     justify-content: center;
@@ -381,8 +398,9 @@ a, a:visited, a:active{
 }
 
 .imgbox{
-    background-color: var(--grey);
+    background-color: #fff;
     height: 300px;
+    /* width: 300px; */
 }
 
 .preview-img
@@ -451,12 +469,22 @@ a, a:visited, a:active{
     display: block;
 }
 
-.current-price{
+.product-detail .nor-price{
+    display: block;
+    right: 0;
+    left: 0;
+    margin: 10px auto 0px auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 50px; /* Need a specific value to work, just a random value */
+}
+
+.product-detail .current-price{
     float: left;
     color: var(--sred);
 }
 
-.last-price{
+.product-detail .last-price{
     float: right;
     font-size: 16px;
     text-decoration: line-through;
