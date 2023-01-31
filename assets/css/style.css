@@ -95,7 +95,7 @@ a, a:visited, a:active{
 
 .search-bar button:hover
 ,.search-bar .ti-search:hover
-,.pay-cart:hover
+,#head-pay-btn button:hover
 {
     cursor: pointer;
     color: black;
@@ -205,12 +205,13 @@ a, a:visited, a:active{
     font-size: 20px;
 }
 
-.pay-cart{
+#head-pay-btn button{
     display: flex;
     height: 35px;
     width: 236px;
     margin: 20px 10px 10px 10px;
     background-color: var(--c);
+    border: none;
     border-radius: 4px;
     font-size: 16px;
     color: #fff;
@@ -350,7 +351,7 @@ a, a:visited, a:active{
 #content .content-repeat{
     display: block;
     padding: 0px 75px;
-    min-height: 970px;
+    min-height: 910px;
     /* margin: 0px 0px; */
 }
 
