@@ -64,8 +64,17 @@ a, a:visited, a:active{
     
 }
 
+#head-menu{
+    margin: 0px 10px 0px 50px;
+    padding-right: 10px !important;
+}
+
+#head-menu .menu-icon{
+    font-size: 30px;
+}
+
 .search-bar{
-    margin: 0px 100px;
+    margin-right: 80px;
     height: 60px;
     width: 100%;
     max-width: 700px;
@@ -96,7 +105,7 @@ a, a:visited, a:active{
     width: 46px;
 }
 
-.ti-search{
+.search-btn{
     background-color: var(--c);
     color: #fff;
     font-size: 18px;
@@ -125,21 +134,17 @@ a, a:visited, a:active{
 #nav li{
     position: relative;
 }
-#nav >li> a{
+#nav >li> a
+,#nav #head-menu{
     display: block;
     font-size: 20px;
     padding: 18.5px 20px;
 }
 
-.arrowdown{
+.arrow-down{
     font-size: 12px;
-    transform: rotate(0deg);
+    text-align: right;
 }
-
-/* li:hover .ti-angle-down{
-    transform: rotate(180deg);
-    transition: 1s;
-} */
 
 .fake-triangle{
     display: none;
@@ -233,8 +238,7 @@ a, a:visited, a:active{
     align-items: center;
 }
 
-.ti-angle-right{
-    margin-left: -3px;
+.arrow-right{
     font-size: 12px;
 }
 
@@ -247,10 +251,6 @@ a, a:visited, a:active{
     color: #000;
     transition: .4s;
 } */
-
-.ti-email{
-    font-size: 20px;
-}
 
 .navhover {
     color: #0000;
@@ -399,7 +399,7 @@ a, a:visited, a:active{
 
 .product-list:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    background-image: linear-gradient(to left,rgb(241, 171, 238), white);
+    background-image: linear-gradient(to left bottom,rgb(241, 171, 238), white);
     transition: .5s ease;
 }
 
