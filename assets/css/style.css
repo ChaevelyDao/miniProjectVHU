@@ -73,6 +73,88 @@ a, a:visited, a:active{
     font-size: 30px;
 }
 
+.catalog-menu-dropdown{
+    display: none;
+    left: 0;
+    right: 0;
+    padding: 24px 12px 16px 12px;
+    text-align: left;
+    color: #212121;
+    width: fit-content;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 10;
+    transition: .4s;
+
+}
+
+.catalog-menu-content{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#main-catalog-title{
+    font-weight: bold;
+    font-size: 32px;
+    color: #7A7E7F; 
+    text-align: left;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#catalog-nav-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog-content{
+    margin-right: 40px;
+}
+
+#catalog-right-title{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sub-catalog-title{
+    margin-bottom: 12px;
+    padding-left: 24px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu-title{
+    font-size: 32px;
+    color: #212121;
+    text-transform: capitalize;
+    /* word-spacing: -10px; */
+}
+
+.catalog-content-nav{
+    font-size: 20px;
+    padding: 18.5px 20px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.catalog-content-nav:hover{
+    color: var(--c);
+    background-color: var(--grey);
+}
+
 .search-bar{
     margin-right: 80px;
     height: 60px;
@@ -124,14 +206,15 @@ a, a:visited, a:active{
 }
 
 #nav{
-    display: inline-block;
+    display: flex;
     align-self: center;
     justify-self: center;
 }
 #nav>li{
     display: inline-block;
 }
-#nav li{
+#nav li
+,#nav #head-menu{
     position: relative;
 }
 #nav >li> a
@@ -162,11 +245,12 @@ a, a:visited, a:active{
 
 #nav .subnav{
     display: none;
+    /* display: block; */
     /* height: 0px; */
     position: absolute;
     min-width: 169px;
     top: 100%;
-    left: 0;
+    /* left: 0; */
     color: #000;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -184,12 +268,10 @@ a, a:visited, a:active{
     font-size: 18px!important;
 }
 
-#nav li:hover .subnav{
-    display: block;
-}
 
 #nav li:hover .subnav
-,#nav li:hover .fake-triangle{
+,#nav li:hover .fake-triangle
+,#nav #head-menu:hover .catalog-menu-dropdown{
     display: block;
 }
 
@@ -209,6 +291,7 @@ a, a:visited, a:active{
     color: #000;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
     z-index: 4;
     font-size: 16px;
 }
@@ -309,17 +392,6 @@ a, a:visited, a:active{
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
-  /* .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  } */
-  
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
@@ -337,10 +409,12 @@ a, a:visited, a:active{
   }
   
   /* Fading animation */
-  .fade {
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
   @keyframes fade {
     from {opacity: .4}
