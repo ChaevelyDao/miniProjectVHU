@@ -40,6 +40,10 @@ a, a:visited, a:active{
     overflow: hidden;
 }
 
+.pn{
+    pointer-events: none;
+}
+
 #header{
     padding: 20px 40px;
     height: 100px;
@@ -138,6 +142,7 @@ a, a:visited, a:active{
     font-size: 32px;
     color: #212121;
     text-transform: capitalize;
+    pointer-events: none;
     /* word-spacing: -10px; */
 }
 
@@ -153,6 +158,7 @@ a, a:visited, a:active{
 .catalog-content-nav:hover{
     color: var(--c);
     background-color: var(--grey);
+    cursor: pointer;
 }
 
 .search-bar{
@@ -441,7 +447,7 @@ a, a:visited, a:active{
     font-size: 37px;
     font-weight: bolder;
     letter-spacing: 1px;
-    margin: 70px 0px 20px 0px;
+    margin: 50px 0px 20px 0px;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
@@ -452,16 +458,24 @@ a, a:visited, a:active{
     font-weight: 600;
     text-transform: capitalize;
     color: var(--sub-title);
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
 }
 
 .product-list{
-    float: left;
+    display: flex;
+    flex-direction: column;
+    /* float: left; */
     width: 18%;
     min-width: 300px;
     padding-top: 16px;
-    margin: 0px 15px;
-    margin-bottom:20px;
+    margin: 20px 15px;
     border: 0.1px solid rgb(177, 177, 177);
     border-radius: 16px;
     background-image: linear-gradient(to left, rgb(255, 206, 253), #dff1ff);
@@ -518,6 +532,7 @@ a, a:visited, a:active{
     background-color: yellow;
     z-index: 2;
     margin-top: -270px;
+    pointer-events: none;
 }
 .order-badge{
     position: absolute;
@@ -529,6 +544,7 @@ a, a:visited, a:active{
     z-index: 2;
     margin-top: -90px;
     text-transform: capitalize;
+    pointer-events: none;
 }
 
 .product-detail{
@@ -552,6 +568,7 @@ a, a:visited, a:active{
 .product-detail .price{
     margin-top: 10px;
     display: block;
+    pointer-events: none;
 }
 
 .product-detail .nor-price{
@@ -559,6 +576,7 @@ a, a:visited, a:active{
     right: 0;
     left: 0;
     margin: 10px auto 0px auto;
+    pointer-events: none;
     /* margin-left: auto;
     margin-right: auto; */
     width: 50px; /* Need a specific value to work, just a random value */
