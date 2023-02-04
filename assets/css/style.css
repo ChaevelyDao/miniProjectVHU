@@ -573,18 +573,18 @@ a, a:visited, a:active{
 
 .product-detail .nor-price{
     display: block;
-    right: 0;
-    left: 0;
     margin: 10px auto 0px auto;
     pointer-events: none;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 50px; /* Need a specific value to work, just a random value */
 }
 
 .product-detail .current-price{
     float: left;
     color: var(--sred);
+}
+
+.nor-price .current-price{
+    float: none;
+    text-align: center;
 }
 
 .product-detail .last-price{
