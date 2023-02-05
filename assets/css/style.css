@@ -16,12 +16,13 @@ html{
 }
 
 body{
-    /* background-color: var(--grey); */
+    background-color: rgba(227, 230, 243, .2);
+
 }
 :root{
     /* --grey:#e7e7e9; */
-    --grey:#e3e6f3;
-    --sub-title:#bcbec5; 
+    --grey:rgba(227, 230, 243, 1);
+    --sub-title:rgba(188, 190, 197, 1); 
     --input-color:rgb(19, 18, 18);
     --sred:rgba(244, 67, 54, 1);
     --b: 0.1em;   /* the thickness of the line */
@@ -189,12 +190,12 @@ a, a:visited, a:active{
     border: 0;
     border-radius: 50%;
     background-color: #fff;
+    background-color: var(--c);
     height: 46px;
     width: 46px;
 }
 
 .search-btn{
-    background-color: var(--c);
     color: #fff;
     font-size: 18px;
     padding: 13px;
@@ -204,6 +205,7 @@ a, a:visited, a:active{
 .search-bar button:hover
 ,.search-bar .ti-search:hover
 ,#head-pay-btn button:hover
+,.mail-bar .submit-btn:hover
 {
     cursor: pointer;
     color: black;
@@ -277,7 +279,8 @@ a, a:visited, a:active{
 
 #nav li:hover .subnav
 ,#nav li:hover .fake-triangle
-,#nav #head-menu:hover .catalog-menu-dropdown{
+,#nav #head-menu:hover .catalog-menu-dropdown
+,.h-cart:hover #head-cart{
     display: block;
 }
 
@@ -331,16 +334,6 @@ a, a:visited, a:active{
     font-size: 12px;
 }
 
-.h-cart:hover #head-cart{
-    display: block;
-}
-
-/* .pay-cart:hover{
-    opacity: .7;
-    color: #000;
-    transition: .4s;
-} */
-
 .navhover {
     color: #0000;
     padding-block: var(--b);
@@ -357,7 +350,7 @@ a, a:visited, a:active{
 }
 #slider,
 #content{
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .slideshow-container {
@@ -592,4 +585,54 @@ a, a:visited, a:active{
     float: right;
     font-size: 16px;
     text-decoration: line-through;
+}
+
+.top-footer{
+    display: flex;
+    padding: 15px 75px;
+    /* margin: 0px 100px; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(227, 230, 243, .7);
+}
+
+.news-letter{
+
+}
+
+.mail-bar{
+    margin: 0px 80px;
+    height: 44px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 6px 30px 30px 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mail-bar input{
+    flex: 1;
+    border: 0;
+    outline: none;
+    margin: 14px 20px 12px 26px;
+    font-size: 16px;
+    background-color: #fff;
+    color: var(--input-color);
+}
+
+.mail-bar .submit-btn{
+    border: 0;
+    border-radius: 46px;
+    background-color: var(--c);
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px;
+}
+
+.green-text{
+    color: var(--c);
 }
