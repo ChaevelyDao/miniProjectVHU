@@ -459,6 +459,7 @@ a, a:visited, a:active{
     text-transform: capitalize;
     color: var(--sub-title);
     margin-bottom: 50px;
+    pointer-events: none;
 }
 
 .item-box{
