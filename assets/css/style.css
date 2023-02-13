@@ -28,6 +28,12 @@ body{
     --b: 0.1em;   /* the thickness of the line */
     --c: rgba(80, 159, 60, 1);
     --co: rgba(80, 159, 60, .8);
+    --fb-blue: rgba(66,103,178,1);
+    --yt-red: rgba(255, 0, 0, 1);
+    --tt-pink: rgba(255, 0, 80, 1);
+    --tt-aqua: rgba(0, 242, 234,1);
+    --discord-purple:rgba(88,101,242,1);
+    --twitter-blue: rgba(29, 161, 242,1);
 }
 a, a:visited, a:active{
     color: inherit;
@@ -47,7 +53,7 @@ a, a:visited, a:active{
 
 #header{
     padding: 10px 40px;
-    height: 80px;
+    height: 74px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -65,13 +71,18 @@ a, a:visited, a:active{
 .logo{
     float: left;
     object-fit: cover;
-    height: 60px;
+    height: 54px;
     
 }
 
 #head-menu{
     margin: 0px 10px 0px 50px;
     padding-right: 10px !important;
+}
+
+.head-menu-btn{
+    /* display: flex;
+    flex-direction: row; */
 }
 
 #head-menu .menu-icon{
@@ -164,7 +175,7 @@ a, a:visited, a:active{
 
 .search-bar{
     margin-right: 80px;
-    height: 60px;
+    height: 54px;
     width: 100%;
     max-width: 700px;
     background-color: #fff;
@@ -179,20 +190,20 @@ a, a:visited, a:active{
     flex: 1;
     border: 0;
     outline: none;
-    margin: 19px 20px 19px 36px;
+    margin: 16px 20px 16px 36px;
     font-size: 19px;
     background-color: #fff;
     color: var(--input-color);
 }
 
 .search-bar button{
-    margin-right: 10px;
+    margin-right: 6px;
     border: 0;
     border-radius: 50%;
     background-color: #fff;
     background-color: var(--c);
-    height: 46px;
-    width: 46px;
+    height: 44px;
+    width: 44px;
 }
 
 .search-btn{
@@ -472,7 +483,7 @@ a, a:visited, a:active{
     margin: 20px 15px;
     border: 0.1px solid rgb(177, 177, 177);
     border-radius: 16px;
-    background-image: linear-gradient(to left, rgb(255, 206, 253), #dff1ff);
+    background-image: linear-gradient(to left, rgb(247, 226, 247), #dff1ff);
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -481,7 +492,7 @@ a, a:visited, a:active{
 
 .product-list:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    background-image: linear-gradient(to left bottom,rgb(241, 171, 238), white);
+    background-image: linear-gradient(to left bottom,rgba(241, 171, 238,.4), white);
     transition: .5s ease;
 }
 
@@ -597,7 +608,8 @@ a, a:visited, a:active{
 }
 
 .news-letter{
-
+    display: flex;
+    flex-direction: row;
 }
 
 .mail-bar{
@@ -635,4 +647,66 @@ a, a:visited, a:active{
 
 .green-text{
     color: var(--c);
+}
+
+.bottom-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px 30px 0px;
+}
+
+.media-container{
+    display: flex;
+    flex-direction: row;
+}
+.media-icon{
+    display: flex;
+    padding: 10px;
+    margin: 6px 8px 0px 0px;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+}
+
+.icon-fb:hover{
+    cursor: pointer;
+    color: var(--fb-blue);
+    border-color: var(--fb-blue);
+    box-shadow: 0 0 10px var(--fb-blue);
+    transition: .4s;
+}
+
+.icon-yt:hover{
+    cursor: pointer;
+    color: var(--yt-red);
+    border-color: var(--yt-red);
+    box-shadow: 0 0 10px var(--yt-red);
+    transition: .4s;
+}
+
+.icon-tiktok:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px var(--tt-pink), -2px -2px var(--tt-aqua);
+    border-color: var(--tt-aqua) var(--tt-pink) var(--tt-pink) var(--tt-aqua);
+    box-shadow: 2px 2px 10px var(--tt-pink), -2px -2px 10px var(--tt-aqua);
+    transition: .4s;
+}
+
+.icon-discord:hover{
+    cursor: pointer;
+    color: var(--discord-purple);
+    border-color: var(--discord-purple);
+    box-shadow: 0 0 10px var(--discord-purple);
+    transition: .4s;
+}
+
+.icon-tw:hover{
+    cursor: pointer;
+    color: var(--twitter-blue);
+    border-color: var(--twitter-blue);
+    box-shadow: 0 0 10px var(--twitter-blue);
+    transition: .4s;
 }
