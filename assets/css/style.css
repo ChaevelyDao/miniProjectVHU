@@ -154,8 +154,6 @@ a, a:visited, a:active{
     font-size: 32px;
     color: #212121;
     text-transform: capitalize;
-    pointer-events: none;
-    /* word-spacing: -10px; */
 }
 
 .catalog-content-nav{
@@ -566,6 +564,7 @@ a, a:visited, a:active{
 }
 
 .green-text,
+.menu-title:hover,
 .product-name:hover,
 .footer-support p:hover{
     color: var(--c);
