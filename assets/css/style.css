@@ -297,7 +297,6 @@ a, a:visited, a:active{
 
 .subnav li:hover{
     background-color: var(--grey);
-    /* background-color: rgb(167, 208, 245); */
     color: var(--c);
 }
 
@@ -566,7 +565,9 @@ a, a:visited, a:active{
     overflow: hidden;
 }
 
-.product-name:hover{
+.green-text,
+.product-name:hover,
+.footer-support p:hover{
     color: var(--c);
 }
 
@@ -645,19 +646,36 @@ a, a:visited, a:active{
     padding: 13px;
 }
 
-.green-text{
-    color: var(--c);
-}
-
 .bottom-footer{
     display: flex;
     flex-direction: row;
-    padding: 40px 0px 30px 0px;
+    line-height: 1.5;
+    justify-content: center;
+    padding: 40px 40px 30px 40px;
+}
+
+.footer-item{
+    max-width: 23%;
+    padding: 0px 15px;
+}
+
+.footer-sub-title{
+    text-transform: capitalize;
+    margin: 5px 0px 20px 0px;
+    font-size: 20px;
+}
+
+.footer-sub-content p{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    color: rgba(0,0,0,0.7);
 }
 
 .media-container{
     display: flex;
     flex-direction: row;
+    margin: 12px 0px;
 }
 .media-icon{
     display: flex;
@@ -689,7 +707,7 @@ a, a:visited, a:active{
 
 .icon-tiktok:hover{
     cursor: pointer;
-    text-shadow: 2px 2px var(--tt-pink), -2px -2px var(--tt-aqua);
+    text-shadow: 1px 2px var(--tt-pink), -1px -2px var(--tt-aqua);
     border-color: var(--tt-aqua) var(--tt-pink) var(--tt-pink) var(--tt-aqua);
     box-shadow: 2px 2px 10px var(--tt-pink), -2px -2px 10px var(--tt-aqua);
     transition: .4s;
@@ -710,3 +728,19 @@ a, a:visited, a:active{
     box-shadow: 0 0 10px var(--twitter-blue);
     transition: .4s;
 }
+
+.footer-sub-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p,
+.footer-support p{
+    font-size: 16px;
+}
+
+.icona{
+    margin-right: 10px;
+    width: 15px;
+}
+
