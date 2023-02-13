@@ -680,7 +680,7 @@ a, a:visited, a:active{
 }
 .media-icon{
     display: flex;
-    padding: 10px;
+    padding: 20px;
     margin: 6px 8px 0px 0px;
     height: 48px;
     width: 48px;
@@ -688,46 +688,67 @@ a, a:visited, a:active{
     justify-content: center;
     border: solid 1px #ccc;
     border-radius: 6px;
+    font-size: 16px;
+}
+
+.icon-fb{
+    color: var(--fb-blue);
+    transition: .4s;
 }
 
 .icon-fb:hover{
     cursor: pointer;
-    color: var(--fb-blue);
     border-color: var(--fb-blue);
     box-shadow: 0 0 10px var(--fb-blue);
-    transition: .4s;
+    font-size: 20px;
+}
+
+.icon-yt{
+    color: var(--yt-red);
+    transition: .3s linear;
 }
 
 .icon-yt:hover{
     cursor: pointer;
-    color: var(--yt-red);
     border-color: var(--yt-red);
     box-shadow: 0 0 10px var(--yt-red);
+    font-size: 20px;
+}
+
+.icon-tiktok{
+    text-shadow: 1px 2px var(--tt-pink), -1px -2px var(--tt-aqua);
     transition: .4s;
 }
 
 .icon-tiktok:hover{
     cursor: pointer;
-    text-shadow: 1px 2px var(--tt-pink), -1px -2px var(--tt-aqua);
+    font-size: 20px;
     border-color: var(--tt-aqua) var(--tt-pink) var(--tt-pink) var(--tt-aqua);
     box-shadow: 2px 2px 10px var(--tt-pink), -2px -2px 10px var(--tt-aqua);
+}
+
+.icon-discord{
+    color: var(--discord-purple);
     transition: .4s;
 }
 
 .icon-discord:hover{
     cursor: pointer;
-    color: var(--discord-purple);
     border-color: var(--discord-purple);
     box-shadow: 0 0 10px var(--discord-purple);
+    font-size: 20px;
+}
+
+.icon-tw{
+    color: var(--twitter-blue);
     transition: .4s;
 }
 
 .icon-tw:hover{
     cursor: pointer;
-    color: var(--twitter-blue);
     border-color: var(--twitter-blue);
     box-shadow: 0 0 10px var(--twitter-blue);
-    transition: .4s;
+    font-size: 20px;
 }
 
 .footer-sub-content{
