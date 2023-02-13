@@ -566,8 +566,10 @@ a, a:visited, a:active{
 .green-text,
 .menu-title:hover,
 .product-name:hover,
+.contact-info a:hover p,
 .footer-support p:hover{
     color: var(--c);
+    transition: .4s;
 }
 
 .product-detail .price{
