@@ -212,7 +212,7 @@ a, a:visited, a:active{
 }
 
 .search-bar button:hover
-,.search-bar .ti-search:hover
+,.search-bar .search-btn:hover
 ,#head-pay-btn button:hover
 ,.mail-bar .submit-btn:hover
 {
