@@ -71,7 +71,6 @@ h4{
 }
 
 #cursor-tracking{
-    display: none;
     display: block;
     position: relative;
     position: fixed;
