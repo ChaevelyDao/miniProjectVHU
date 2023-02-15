@@ -47,9 +47,20 @@ a, a:visited, a:active{
     overflow: hidden;
 }
 
-@font-face { font-family: Quicksand; 
+@font-face {
+    font-family: Quicksand; 
     src: url(../font/Quicksand-font/Quicksand-VariableFont_wght.ttf);
 } 
+
+@font-face {
+    font-family: genshin-jp;
+    src: url(../font/Genshin-font/ja-jp.ttf);
+}
+
+@font-face {
+    font-family: genshin-cn;
+    src: url(../font/Genshin-font/zh-cn.ttf);
+}
 
 h4{
     margin-bottom: 13px;
@@ -61,17 +72,38 @@ h4{
 
 #cursor-tracking{
     display: none;
+    display: block;
+    position: relative;
     position: fixed;
+    left: -164px;
     z-index: 998;
+    scale: 0.4;
+    bottom: 20%;
+}
+
+.img-scale{
 }
 
 #cursor-tracking img{
-
+    
 }
 
 #eyes, #eyes img{
     z-index: 999;
     position: absolute;
+}
+
+.media-tracking{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 200px;
+    scale: 2.5;
+}
+
+.media-tracking .media-icon{
+    background-color: #fff;
 }
 
 #header{
